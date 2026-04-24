@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v6.1.7"><link rel="icon" type="image/png" sizes="64x64" href="/favicon.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><title>mySavings Privacy Policy | Paul&#39;s Mobile Apps</title><meta name="description" content="mySavings privacy policy information."><meta name="theme-color" content="#0a84ff"><link rel="stylesheet" href="/_astro/apps.CPUqp9ke.css"></head> <body> <div class="page-shell"> <header class="site-header" data-reveal style="--reveal-delay: 40ms;"> <a class="brand" href="/">Paul's Mobile Apps</a> <nav class="nav-links" aria-label="Primary"> <a href="/">Home</a> <a href="/#apps">Apps</a> <a href="/#support">Support</a> <a href="/#about">About</a> <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Toggle dark mode">Theme</button> </nav> </header> <main>  <section class="section section-top card" data-reveal> <p class="eyebrow">Privacy Policy</p> <h1 class="section-title" style="font-size: clamp(2rem, 5vw, 3.8rem); margin-top: 0.5rem;"> mySavings </h1> <p class="subhead" style="margin-top: 0.6rem;">
+Last updated: 19th April, 2026 </p> <div class="feature-grid" style="margin-top: 1.4rem; grid-template-columns: 1fr; gap: 0.85rem;"> <article class="feature-pill"> <strong>1. Overview</strong><br>
+This Privacy Policy describes how this app ("the App") handles your information.<br><br>
+The App is designed to respect your privacy. It does not collect, store, or
+        share personal data with external servers or third parties.
+</article> <article class="feature-pill"> <strong>2. Data Collection</strong><br>
+The App does not collect any personal data.<br><br>
+All information you enter into the App, including financial details such as:
+<ul> <li>account names</li> <li>bank names</li> <li>balances</li> <li>notes or categories</li> </ul>
+is stored only on your device and, if enabled, securely in your personal iCloud
+        account.<br><br>
+This data is:
+<ul> <li>not accessible by the developer</li> <li>not transmitted to any external servers</li> <li>not used for tracking or analytics</li> </ul> </article> <article class="feature-pill"> <strong>3. Data Storage</strong><br>
+Your data is stored in the following ways:
+<ul> <li> <strong>On-device storage:</strong> Data is stored locally on your device.
+</li> <li> <strong>iCloud sync (optional):</strong> If enabled, your data is securely
+            stored in your personal iCloud account and synced across your Apple devices.
+</li> </ul>
+All iCloud data is managed by Apple and subject to Apple's privacy and security
+        policies.
+</article> <article class="feature-pill"> <strong>4. Analytics</strong><br>
+The App uses App Store-provided analytics only, supplied by Apple.<br><br>
+These analytics:
+<ul> <li>are aggregated and anonymised</li> <li>do not identify you personally</li> <li>are used only to understand general app usage</li> </ul>
+The App does not use third-party analytics tools.
+</article> <article class="feature-pill"> <strong>5. Tracking</strong><br>
+The App does not track users.
+<ul> <li>No tracking across apps or websites</li> <li>No advertising identifiers are used</li> <li>No data is sold or shared</li> </ul> </article> <article class="feature-pill"> <strong>6. In-App Purchases</strong><br>
+The App may offer optional in-app purchases to unlock additional features.<br><br>
+Payments are processed securely by Apple. The developer does not receive or
+        store your payment details.
+</article> <article class="feature-pill"> <strong>7. Notifications</strong><br>
+The App may request permission to send notifications.
+<ul> <li>
+Notifications are optional and can be enabled or disabled in the App
+            or device settings
+</li> <li>
+No personal data is collected or transmitted through notifications
+</li> </ul> </article> <article class="feature-pill"> <strong>8. Data Sharing</strong><br>
+The App does not share any data with third parties.<br><br>
+All data remains under your control on your device and within your iCloud
+        account.
+</article> <article class="feature-pill"> <strong>9. Data Deletion</strong><br>
+You can delete your data at any time by:
+<ul> <li>using in-app data deletion features, or</li> <li>uninstalling the App</li> </ul>
+If iCloud sync is enabled, deleting data within the App will also remove it
+        from your iCloud storage.
+</article> <article class="feature-pill"> <strong>10. Children's Privacy</strong><br>
+The App is not intended for children under the age of 13.<br><br>
+The App does not knowingly collect any personal data from children.
+</article> <article class="feature-pill"> <strong>11. Changes to This Policy</strong><br>
+This Privacy Policy may be updated from time to time.<br><br>
+Any changes will be reflected on this page with an updated "Last updated"
+        date.
+</article> <article class="feature-pill"> <strong>12. Contact</strong><br>
+If you have any questions about this Privacy Policy, you can contact:<br><br>
+[Your Name / Company Name]<br>
+[Your Contact Email]
+</article> </div> <div class="actions"> <a class="button button-secondary" href="/apps/mysavings">Back to app overview</a> </div> </section>  </main> </div> <script>
+      (() => {
+        const root = document.documentElement;
+        const storageKey = "preferred-theme";
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        const reduceMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+        const initial =
+          localStorage.getItem(storageKey) || (prefersDark ? "dark" : "light");
+        root.setAttribute("data-theme", initial);
+        const applyScreenshotTheme = (theme) => {
+          const screenshotImages = Array.from(
+            document.querySelectorAll("img[data-theme-light-src][data-theme-dark-src]"),
+          );
+          screenshotImages.forEach((img) => {
+            const nextSrc =
+              theme === "dark"
+                ? img.getAttribute("data-theme-dark-src")
+                : img.getAttribute("data-theme-light-src");
+            if (nextSrc && img.getAttribute("src") !== nextSrc) {
+              img.setAttribute("src", nextSrc);
+            }
+          });
+        };
+        applyScreenshotTheme(initial);
+
+        const btn = document.getElementById("theme-toggle");
+        if (btn) {
+          btn.addEventListener("click", () => {
+            const current =
+              root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+            const next = current === "dark" ? "light" : "dark";
+            root.setAttribute("data-theme", next);
+            localStorage.setItem(storageKey, next);
+            applyScreenshotTheme(next);
+          });
+        }
+
+        const revealTargets = Array.from(
+          document.querySelectorAll("[data-reveal]"),
+        );
+        if (revealTargets.length > 0) {
+          if (reduceMotion || !("IntersectionObserver" in window)) {
+            revealTargets.forEach((el) => el.classList.add("is-visible"));
+          } else {
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (!entry.isIntersecting) return;
+                  entry.target.classList.add("is-visible");
+                  observer.unobserve(entry.target);
+                });
+              },
+              { threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
+            );
+
+            revealTargets.forEach((el) => observer.observe(el));
+          }
+        }
+
+        const parallaxTargets = Array.from(
+          document.querySelectorAll("[data-parallax]"),
+        );
+        if (parallaxTargets.length === 0 || reduceMotion) return;
+
+        const updateParallax = () => {
+          const viewportCenter = window.innerHeight * 0.5;
+          parallaxTargets.forEach((el) => {
+            const rect = el.getBoundingClientRect();
+            const elementCenter = rect.top + rect.height * 0.5;
+            const delta = (viewportCenter - elementCenter) * 0.03;
+            const maxShift = 10;
+            const clamped = Math.max(-maxShift, Math.min(maxShift, delta));
+            el.style.setProperty(
+              "--parallax-offset",
+              `${clamped.toFixed(2)}px`,
+            );
+          });
+        };
+
+        let rafId = 0;
+        const onScroll = () => {
+          if (rafId) return;
+          rafId = window.requestAnimationFrame(() => {
+            updateParallax();
+            rafId = 0;
+          });
+        };
+
+        updateParallax();
+        window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("resize", onScroll);
+      })();
+    </script> </body> </html>
